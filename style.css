@@ -1,0 +1,90 @@
+* {
+  font-family: 'Montserrat';
+}
+
+body {
+  width: 100vw;
+  height: 98vh;
+  overflow: hidden;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #1d1d1d32;
+  border-radius: 2.4rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px-5px #3d3d3daf;
+  transform: scale(1.5);
+}
+
+h1 {
+  color: #f0f0f0;
+  font-weight: 800;
+  position: absolute;
+  background-color: #1d1d1d;
+  top: 0rem;
+  padding: .2rem 1.2rem;
+  border-radius: 50rem;
+  font-size: 12px;
+  z-index: 2000;
+}
+
+.liveview {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1000;
+}
+
+.webcam {}
+
+.invisible {
+  display: none;
+}
+
+.webcamButton {
+  color: #f0f0f0;
+  position: absolute;
+  bottom: .8rem;
+  z-index: 600;
+  background-color: #3d3d3d;
+  font-weight: 600;
+  padding: .2rem .8rem;
+  border-radius: 50rem;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.highlighter {
+  position: absolute;
+  background-color: rgba(55, 55, 55, 0.25);
+  z-index: 1000;
+  border-radius: 1rem;
+  border: 2px outset rgba(55, 55, 55, 0.5);
+  box-shadow: 0px 0px 10px -5px #3d3d3daf;
+  overflow: hidden;
+}
+
+.highlighter p {
+  box-shadow: 0px 0px 10px #fafafa24;
+  background-color: rgba(55, 55, 55, 0.35);
+  padding: 1rem 0;
+  margin-top: -.2rem;
+  text-align: center;
+  font-weight: 600;
+  color: #f0f0f0;
+}
